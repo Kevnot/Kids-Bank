@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#34d399" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Taschengeld-Taschen PRO</title>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="hero-row">
+        <div class="icon-box">✨</div>
+        <div>
+          <h1>Taschengeld-Taschen PRO</h1>
+          <p>mehrere Kinder · Eltern-PIN · Aufgaben · 5%-Zinsen</p>
+        </div>
+      </div>
+
+      <div id="lockArea" class="mode-box"></div>
+      <div id="status" class="status-pill"></div>
+    </header>
+
+    <section class="card">
+      <div class="section-title">👨‍👧 Kind auswählen</div>
+      <div id="childTabs" class="child-tabs"></div>
+      <div id="addChildArea"></div>
+    </section>
+
+    <section class="card">
+      <input id="childName" class="name-input" />
+      <p class="muted">Gesamt</p>
+      <div id="total" class="total">0,00 €</div>
+      <div class="amount-row">
+        <input id="amount" type="number" min="0.5" step="0.5" value="1" class="amount-input" />
+        <button id="paydayBtn" class="btn">🎁 Monatszinsen</button>
+      </div>
+      <p id="interestHint" class="hint"></p>
+    </section>
+
+    <div id="pockets"></div>
+
+    <section class="card">
+      <div class="section-title">🎯 Ziel einstellen</div>
+      <input id="goalName" class="field" placeholder="Sparziel" />
+      <input id="goalPrice" type="number" class="field" placeholder="Zielbetrag" />
+    </section>
+
+    <section class="card">
+      <div class="section-title">📋 Aufgaben & Belohnungen</div>
+      <div id="tasks"></div>
+      <div id="addTaskArea"></div>
+    </section>
+
+    <section id="parentSettings" class="card hidden">
+      <div class="section-title">🔑 Eltern-Einstellungen</div>
+      <input id="newPin" class="field" type="password" placeholder="Neue PIN, mindestens 4 Zeichen" />
+      <div class="button-grid">
+        <button id="changePinBtn" class="btn">PIN ändern</button>
+        <button id="deleteChildBtn" class="btn danger">Kind löschen</button>
+      </div>
+      <button id="resetAllBtn" class="btn danger full">Alles zurücksetzen</button>
+    </section>
+
+    <section class="card">
+      <div class="section-title">✅ Verlauf</div>
+      <div id="history"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

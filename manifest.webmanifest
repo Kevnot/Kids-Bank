@@ -1,0 +1,21 @@
+{
+  "name": "Taschengeld-Taschen PRO",
+  "short_name": "Geldtaschen",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ecfdf5",
+  "theme_color": "#34d399",
+  "description": "Kindgerechte Taschengeld-App mit Eltern-Modus, mehreren Kindern, Aufgaben und 5%-Zinsen.",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
